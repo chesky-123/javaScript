@@ -131,22 +131,144 @@
 
 // 13
 
-const nums = [1, 2, 3, 4, 5, 6];
+// const nums = [1, 2, 3, 4, 5, 6];
 
-const result = nums.reduce((acc, num) => {
-  const key = (num % 2 === 0 ? "even" : "odd")
-  acc[key] += 1;
-  return acc;
-}, { even: 0, odd: 0 })
+// const result = nums.reduce((acc, num) => {
+//   const key = (num % 2 === 0 ? "even" : "odd")
+//   acc[key] += 1;
+//   return acc;
+// }, { even: 0, odd: 0 })
 
-console.log(result)
+// console.log(result)
+
+// //////////////////////חלק ג'//////////////////////////////
+
+// 14
+
+// const nums = [23, 60, 45, 88, 17, 51, 34]
+
+// console.log(nums.find(num => num > 50))
+
+// 15
+
+// const users = [{ name: "Avi", age: 17, "id":888},
+//   { name: "Dana", age: 22, "id": 7946 }];
+
+
+// console.log(users.find((user => user.id === 7946)))
+
+// 16
+
+// const nums = [23, 60, -28, 51, 34];
+// console.log(nums.some((num => num < 0)));
+
+// 17
+
+// const nums = [23, 60, 28, 51, 34];
+// console.log(nums.every((num => num > 0)));
+
+// 18
+
+// const users = [{ name: "Avi", age: 17 }, { name: "Dana", age: 22 }];
+// console.log(users.every((user => user.age > 18)));
+
+/////////////////////////חלק ד' ////////////////////////////
+
+// 19
+
+// const fruits = ["chery", "apple", "oranj"];
+// console.log(fruits.includes("apple"));
+
+// 20
+
+// const nums = [23, 60, 28, 51, 34];
+
+// console.log(nums.indexOf(28));
+
+// 21
+
+// const nums = [23, 60, 28, 51, 34];
+
+// console.log(nums.includes(51,2));
+
+///////////////////////חלק ה'///////////////////////////////////
+
+// 22
+
+// const fruits = ["chery", "apple", "oranj"];
+
+// fruits.forEach((item, index) => {
+//   console.log(item, index);
+// });
+
+// 23
+
+// const fruits = ["chery", "apple", "oranj"];
+// const arr = [];
+
+// fruits.forEach((item) => {
+//   arr.push(item)
+// })
+// console.log(arr)
+
+//////////////////////////////חלק ו'//////////////////////////////////
+
+// 24
+
+// const nums = [23, 60, 28, 51, 34];
+
+// const sorted = nums.sort((a, b) => a - b);
+// console.log(sorted)
+
+// 25
+
+// const nums = [23, 60, 28, 51, 34];
+
+// const sorted = nums.sort((a, b) => b - a);
+// console.log(sorted);
+
+// 26
+
+// const products = [
+//   { name: "Laptop", price: 1200 },
+//   { name: "Mouse", price: 25 },
+//   { name: "Keyboard", price: 100 },
+//   { name: "Monitor", price: 300 },
+//   { name: "Headphones", price: 50 }
+// ];
+
+// const sortProducts = products.sort((a, b) => a.price - b.price);
+// console.log(sortProducts)
+
+// 27
+
+// const nums = [23, 60, 28, 51, 34];
+// console.log(nums.reverse())
+
+////////////////////////חלק ז'///////////////////////////////
+
+// 28
+
+// const nums = [23, 60, 45, 88, 17, 51, 34];
+// console.log(nums.slice(2, 5));
+
+// 29
+
+const nums = [23, 60, 45, 88, 17, 51, 34];
+const arr = nums.slice(1,4);
+console.log(arr);
+
+// 30
 
 
 
 
 
 
-git remote add origin https://github.com/chesky-123/javaScript.git
+
+
+
+
 
 
 

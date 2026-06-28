@@ -43,7 +43,7 @@
 
 // const password = "1234";
 
-// console.log(password === "1234" ? "loggin successful" :"invalid password")
+// console.log(password === "1234" ? "loggin successful" : "invalid password")
 
 // // 7
 
@@ -62,7 +62,7 @@
 //   console.log("pass grade");
 // } else console.log("fail");
 
-// 9
+// // 9
 
 // const temp = 35;
 
@@ -70,56 +70,56 @@
 //   console.log("It's very hot, drink some water.")
 // } else if (temp > 20) {
 //   console.log("It's nice outside.")
-// }else console.log("It's cold, take a jacket.")
+// } else console.log("It's cold, take a jacket.")
 
-// 10
+// // 10
 
 // const age = 20;
 // const hasID = true;
 
 // console.log(age >= 18 && hasID ? "Entry is allowed." : "Entry is not allowed.");
 
-// 11
+// // 11
 
 // const isAdmin = true;
 // const isManager = false;
 
 // console.log(isAdmin || isManager ? "Entry is allowed." : "Entry is not allowed.");
 
-// 12
+// // 12
 
 // const hasCard = true;
 
-// console.log(!hasCard ? "No access":"Entry approved");
+// console.log(!hasCard ? "No access" : "Entry approved");
 
-// 13
+// // 13
 
 // const name = "" || "guest";
 
 // console.log(name);
 
-// 14
+// // 14
 
-// const arr = [1,2,3];
+// const arr = [1, 2, 3];
 
 // console.log(arr.length > 0 ? arr : "The array is empty.");
 
-// 15
+// // 15
 
 // const x = "5";
 // const y = 5;
 
-// console.log(x == y); `בודק רק האם הערך שווה ולא הסוג`
-// console.log(x === y); `בודק גם סוג `
+// console.log(x == y);// `בודק רק האם הערך שווה ולא הסוג`
+// console.log(x === y);// `בודק גם סוג `
 
-// 16
+// // 16
 
 // const username = "admin";
 // const password = "1234";
 
-// console.log(username === "admin" && password === "1234" ? "Entry is allowed.": "Somthing wrong.");
+// console.log(username === "admin" && password === "1234" ? "Entry is allowed." : "Somthing wrong.");
 
-// 17
+// // 17
 
 // const age = 67;
 
@@ -127,9 +127,9 @@
 //   console.log("Youth discount");
 // } else if (age > 65) {
 //   console.log("Pensioner discount");
-// }else console.log("not discount");
+// } else console.log("not discount");
 
-// 18
+// // 18
 
 // const day = "Munday";
 
@@ -143,7 +143,7 @@
 //     break;
 // };
 
-// 19
+// // 19
 
 // const total = 250;
 
@@ -153,7 +153,7 @@
 //   console.log("develop : 20$")
 // } else console.log("develop : 40$")
 
-// 20
+// // 20
 
 // const role = "admin";
 

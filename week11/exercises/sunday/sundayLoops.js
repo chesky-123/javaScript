@@ -32,13 +32,13 @@
 
 // 5
 
-const numbers = [2, 5, 8, 11, 14, 17, 20];
+// const numbers = [2, 5, 8, 11, 14, 17, 20];
 
-for (number of numbers) {
-  if (number % 2 === 0) {
-    console.log(number)
-  }
-}
+// for (number of numbers) {
+//   if (number % 2 === 0) {
+//     console.log(number)
+//   }
+// }
 
 
 
