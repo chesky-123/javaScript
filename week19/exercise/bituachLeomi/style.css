@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --basic_Color:#0368b0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: white;
+    border-top: var(--basic_Color) solid 5px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    /* z-index: 1000; */
+}
+
+.upHeader {
+    height: 68%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: none;
+    
+}
+
+.image{
+    height: 100%;
+    width: 30%;
+}
+
+.downHeader{
+    background-color: var(--basic_Color);
+    height: 32%;
+    width: 100%;
+}
+
+.buttonHeader{
+    display: flex;
+    height: 100%;
+    width: 64%;
+    justify-content: center;
+}
+
+.complainsLog{
+    align-items: center;
+    display: flex;
+    text-wrap: nowrap;
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    border-bottom: orange solid 5px;
+    color: var(--basic_Color);
+    text-decoration: none;
+    justify-content: center;
+    font-size: medium;
+}
+
+
+.newComplaint{
+    justify-content: center;
+    background-color: var(--basic_Color);
+    align-items: center;
+    text-wrap: nowrap;
+    display: flex;
+    height: 100%;
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    border-bottom: var(--basic_Color) solid 5px;
+};
+
+
+.main{
+    height: 70%;
+    width: 100%;
+    flex: 1;
+    /* position: ; */
+    /* align-items: end;
+    justify-content: center; */
+}
+/* 
+.p{
+    
+    height: 1%;
+    width: 100%;
+} */
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0; 
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.logo_down{
+    height: 100%;
+    /* width: ; */
+}
+
+
+
+
+
+
+
+
+
+
