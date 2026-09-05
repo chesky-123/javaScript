@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif; /* פונט נקי ומודרני */
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #141414; /* צבע רקע כהה שמתאים לסרטים */
+  color: white; /* טקסט לבן כברירת מחדל */
+  overflow-x: hidden;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- תפריט עליון (Header) --- */
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(20, 20, 20, 0.9); /* רקע כהה עם מעט שקיפות */
+  backdrop-filter: blur(8px); /* אפקט טשטוש יוקרתי למה שמאחורי התפריט */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* צל עדין */
+}
+
+.headerButton {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #007bff; /* כחול מודרני */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.headerButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* אנימציית גדילה קטנה במעבר עכבר */
+}
+
+/* --- דף פרטי סרט (עם הרקע המעומעם) --- */
+
+/* 
+   שים לב: את המחלקה הזו תן ל-DIV שעוטף את כל דף פרטי הסרט.
+   כדי שזה יעבוד בריאקט, תוסיף ל-DIV הזה את התמונה ככה:
+   <div className="details-container" style={{ backgroundImage: `url(${movie.image})` }}> 
+*/
+.details-container {
+  min-height: 100vh;
+  padding-top: 90px; /* מרחיק את התוכן למטה כדי שה-Header לא יסתיר אותו */
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  
+  /* הגדרות הרקע */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/* השכבה השחורה השקופה שמכהה את תמונת הרקע */
+.details-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* מידת הכהות (0.75) */
+  z-index: 1; /* שם את ההכהה מעל התמונה אבל... */
+}
+
+/* מוודא שכל התוכן (טקסט, קישורים) יהיה מעל ההכהה */
+.details-container > * {
+  position: relative;
+  z-index: 2; 
+}
+
+/* עיצוב לקישור של "חזור לסרטים" */
+.back-link {
+  color: #4db8ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* --- דף הסרטים הראשי (Cards) --- */
+.cards {
+  width: 100%;
+  min-height: 100vh;
+  padding: 90px 20px 20px; /* מרווח מלמעלה בגלל ה-Header */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 200px; /* רוחב קבוע לכרטיסיה כדי שייראה מסודר */
+  background-color: #222;
+  overflow: hidden; /* דואג שהתמונה לא תצא מהגבולות המעוגלים */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* אפקט קפיצה קטנה למעלה במעבר עכבר */
+}
+
+.cardImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* שומר על פרופורציות התמונה */
+  display: block;
+}
+
+.title {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
